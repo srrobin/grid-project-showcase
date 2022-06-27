@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
 
+:root {
+    --animate-duration: 1s;
+    --animate-delay: 1s;
+    --animate-repeat: 1;
+}
+
+
+
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -76,3 +85,96 @@ p {
   background: url('https://i.ibb.co/Fb5jb3J/bg2.jpg');
   color: #333;
 }
+
+
+
+
+
+
+
+
+.btn_wrap{
+display:flex;
+align-items:center;
+justify-content:center;
+margin:100px 0;
+padding:50px 0;
+}
+
+.citizensVoice {
+    position: relative; 
+    text-align: center;
+    -webkit-animation: ripple 3s linear infinite;
+    animation: rippleCv 3s linear infinite;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    font-size: 13px;
+    display: flex;
+    align-content: center;
+    align-items: flex-end;
+    background-color: #f7941f;
+    color: #ffffff;
+    z-index: 9;
+    cursor: pointer;
+}
+
+
+.citizensVoice i.fas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size:25px;
+}
+
+.citizensVoice::before, .citizensVoice::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+    -webkit-animation: inherit;
+    animation: inherit;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+.citizensVoice::after {
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+}
+.citizensVoice::before, .citizensVoice::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+    -webkit-animation: inherit;
+    animation: inherit;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+@keyframes rippleCv {
+
+0% {
+    box-shadow: 0 0 0 0.051rem rgba(247, 148, 31, 0.3);
+}
+
+20% {
+    box-shadow: 0 0 0 0.7rem rgba(247, 148, 31, 0.2);
+}
+
+100% {
+    box-shadow: 0 0 0 3rem rgba(247, 148, 31, 0);
+}
+
+}
+
+
+
+
