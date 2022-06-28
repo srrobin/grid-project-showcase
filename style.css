@@ -1,12 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
-
-:root {
-    --animate-duration: 1s;
-    --animate-delay: 1s;
-    --animate-repeat: 1;
-}
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700&family=Barlow+Condensed:wght@100;200;300;400;500;600;700&family=DM+Sans:wght@400;500;700&family=Hahmlet:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&family=Noticia+Text&family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500&display=swap');
 
 
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700&family=Barlow+Condensed:wght@100;200;300;400;500;600;700&family=DM+Sans:wght@400;500;700&family=Epilogue:wght@200&family=Hahmlet:wght@300;400;500;600;700&family=Noticia+Text&family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
 
 * {
@@ -18,7 +13,7 @@
 body {
   background: #333;
   color: #fff;
-  font-family: 'Roboto', sans-serif;
+ font-family: 'Hahmlet', serif;
 }
 
 h2 {
@@ -36,13 +31,15 @@ p {
 }
 
 .container {
+  width:992px;
+  margin:0 auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 10px;
+  margin-bottom:100px;
 }
 
 .container > div {
-  cursor: pointer;
   height: 210px;
   background-size: cover;
   background-attachment: fixed;
@@ -53,12 +50,12 @@ p {
   justify-content: center;
   text-align: center;
 
-  transition: all 0.5s ease-in;
+  
 }
 
 .container > div:hover {
   opacity: 0.7;
-  transform: scale(0.98);
+  
 }
 
 .container > div:nth-of-type(1) {
@@ -78,18 +75,46 @@ p {
 }
 
 .bg1 {
-  background: url('https://i.ibb.co/dBLbrRV/bg1.jpg');
+  background: url('https://images.unsplash.com/photo-1621926187610-946177e44cca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
 }
 
 .bg2 {
-  background: url('https://i.ibb.co/Fb5jb3J/bg2.jpg');
+  background: url('https://images.unsplash.com/photo-1538991383142-36c4edeaffde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80');
   color: #333;
 }
 
-
-
-
-
+.project_info {
+  position:relative;
+}
+.project_info h2 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding: 0;
+    margin: 0;
+}
+.project_info a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: Epilogue, sans-seri;
+    transition: all 0.5s ease;
+    text-transform:capitalize;
+}
+.project_info a:hover {
+ color:red;
+ transform: scale(0.98);
+}
+.project_info span {
+    font-size: .8rem;
+    font-weight: 700;
+    margin: 0 .5rem;
+}
+.project_info img {
+    position: absolute;
+    width: 36px;
+}
 
 
 
